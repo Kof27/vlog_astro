@@ -1,6 +1,42 @@
+---
+const pageTitle: string = "About Me";
 
-<a href="/">Home</a>
-<a href="/about/">About</a>
+---
+const pageTitle = "About Me";
+<script>
+interface Identity {
+    firstName: string;
+    country: string;
+    occupation: string;
+    hobbies: string[];
+}
 
-<h1>About me</h1>
-<p>Hi, I'm Astro. I'm a static site generator for React.</p>
+const identity: Identity = {
+    firstName: "Sarah",
+    country: "Canada",
+    occupation: "Technical Writer",
+    hobbies: ["photography", "birdwatching", "baseball"],
+};
+</script>
+
+const skills: string[] = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+---
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <h1>{pageTitle}</h1>
+    <h2>... and my new Astro site!</h2>
+
+    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+
+    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+  </body>
+</html>
