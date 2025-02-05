@@ -1,9 +1,24 @@
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+---
+import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
+---
+<style>
+  p {
+    color: purple;
+    font-size: 1rem;
+    font: bold;
+  }
+
+</style>
+<Header/>
+
     <title>Astro</title>
   </head>
   <body>
     <h1>Astro</h1>
+    <p>Welcome to my Astro site!</p>
+    <Footer/>
   </body>
 </html>
